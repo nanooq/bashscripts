@@ -25,7 +25,7 @@ folderresized='resize/'
 filename=''
 
 #
-# Remove eventually existing resize folder
+# Remove eventually existing resize and label folder
 
 if [ -d ${folderlabeled} ] 
   then
@@ -54,10 +54,12 @@ printf "\nAppending label... "
 mkdir ${folderlabeled}
 for i in $(ls *${filetype})
   do
+    echo $i
     convert ${i} -background White -pointsize 150 label:${mydate} -gravity Center -append ${folderlabeled}${i}
   done
 printf "done."
 
+exit 
 #
 # Resize images
 printf "\nResizing images... "

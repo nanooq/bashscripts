@@ -7,6 +7,7 @@ folder="$HOME/Pictures/Pictures_Unsorted"
 mkdir -p "${folder}"
 find . -maxdepth 1 -iname "*.jpg" -exec mv {} "${folder}" \;
 find . -maxdepth 1 -iname "*.png" -exec mv {} "${folder}" \;
+find . -maxdepth 1 -iname "*.gif" -exec mv {} "${folder}" \;
 
 printf "\nBooks\n"
 folder="$HOME/Books/Books_Unsorted"
