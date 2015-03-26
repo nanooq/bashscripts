@@ -5,6 +5,11 @@ param="${1}"
 set -e
 set -u
 
+printf "start etherpad\n"
+/home/lora/Sync/etherpad-lite/bin/run.sh &
+
+printf "start ocaocb\n"
+
 cd /home/lora/Sync/ocaocb
 
 if [ -z "${param}" ]

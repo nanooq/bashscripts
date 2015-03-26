@@ -1,4 +1,4 @@
 #! /bin/bash
 
-mosh fnord1.hiekmann
+LC_ALL=en_US.UTF-8 mosh fnord1
 
